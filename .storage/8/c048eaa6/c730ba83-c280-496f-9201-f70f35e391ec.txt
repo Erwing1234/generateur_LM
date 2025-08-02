@@ -1,0 +1,33 @@
+$ cd /workspace/shadcn-ui
+$ ls
+
+README.md
+components.json
+eslint.config.js
+index.html
+node_modules
+package.json
+pnpm-lock.yaml
+postcss.config.js
+public
+src
+tailwind.config.ts
+template_config.json
+tsconfig.app.json
+tsconfig.json
+tsconfig.node.json
+vite.config.ts
+$ cd /workspace/shadcn-ui && pnpm run lint
+
+
+> shadcnui@ lint /workspace/shadcn-ui
+> eslint --quiet ./src
+
+
+/workspace/shadcn-ui/src/pages/Index.tsx
+  263:7  error  'signature' is never reassigned. Use 'const' instead  prefer-const
+
+✖ 1 problem (1 error, 0 warnings)
+  1 error and 0 warnings potentially fixable with the `--fix` option.
+
+ ELIFECYCLE  Command failed with exit code 1.
